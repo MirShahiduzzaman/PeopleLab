@@ -1,10 +1,10 @@
 package PeopleLab;
 
 public class Runner {
-    String[] firstNames = {"Mary", "Mir", "Afaq", "Jacky", "Bob"};
-    String[] familyNames = {"Walker", "Sha", "Anwar", "Fang", "Billy"};
-
     public static void main(String[] args) {
+        String[] firstNames = {"Aaron", "Jessica", "Abe", "Kim", "Dylan", "Stephanie", "Adam", "Sophia", "Alan", "Olivia"};
+        String[] familyNames = {"Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor"};
+
 
     }
 }

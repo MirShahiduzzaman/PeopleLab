@@ -21,9 +21,7 @@ public abstract class Person
        this.familyName = familyName;
    }
 
-
-
-    public String getFirstName()
+   public String getFirstName()
     {
         return(firstName);
     }
