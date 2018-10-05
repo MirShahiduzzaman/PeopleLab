@@ -2,9 +2,9 @@ package PeopleLab;
 
 public class Classroom
 {
-    private Person[] students;
-    private Person teacher;
-    public void Classroom(Person[] students, Person teacher)
+    private Student[] students;
+    private Teacher teacher;
+    public void Classroom(Student[] students, Teacher teacher)
     {
         this.students = students;
         this.teacher = teacher;
@@ -12,21 +12,26 @@ public class Classroom
 
     public String getSubject()
     {
-        return subject;
+        return teacher.getSubject();
     }
 
     public double classAverage()
     {
-        for(int i=0; i <= students.length(); i++)
+        double totalAvg = 0;
+        int n = 0;
+        for(int i = 0; i <= students.length; i++)
         {
-            
+            totalAvg += students[i].getGPA();
+            n = i;
         }
+        totalAvg = totalAvg / n;
+        return totalAvg;
     }
 
     public String printClass()
     {
         System.out.println(teacher);
-        System.out.println(subject);
-        System.out.println();
+        System.out.println(teacher.getSubject());
+        System.out.println(students);
     }
 }

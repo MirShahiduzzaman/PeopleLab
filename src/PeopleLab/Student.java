@@ -1,6 +1,6 @@
 package PeopleLab;
 
-public abstract class Student extends Person
+public class Student extends Person
 {
     private double GPA;
     private double mathScore;
