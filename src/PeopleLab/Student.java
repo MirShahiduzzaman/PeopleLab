@@ -16,6 +16,10 @@ public abstract class Student extends Person
         this.elaScore = elaScore;
     }
 
+    public double getGPA() {
+        return GPA;
+    }
+
     public void setGPA(double GPA) {
         this.GPA = GPA;
     }
