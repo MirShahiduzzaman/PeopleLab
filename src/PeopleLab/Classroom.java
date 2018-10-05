@@ -15,11 +15,27 @@ public class Classroom
         return teacher.getSubject();
     }
 
+    public Student[] getStudents() {
+        return students;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
     public double classAverage()
     {
         double totalAvg = 0;
         int n = 0;
-        for(int i = 0; i <= students.length; i++)
+        for(int i = 0; i < students.length; i++)
         {
             totalAvg += students[i].getGPA();
             n = i;
@@ -28,10 +44,12 @@ public class Classroom
         return totalAvg;
     }
 
-    public String printClass()
+    public void printClass()
     {
         System.out.println(teacher);
         System.out.println(teacher.getSubject());
-        System.out.println(students);
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i]);
+        }
     }
 }
