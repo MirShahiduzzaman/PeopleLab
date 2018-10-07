@@ -1,5 +1,12 @@
 package PeopleLab;
 
+/***
+ * Jacky Fang
+ * Classroom object.
+ * Takes an array of students and one teacher object.
+ * Allows us to calculate the class average and modify the classroom.
+ */
+
 public class Classroom
 {
     private Student[] students;
@@ -49,7 +56,7 @@ public class Classroom
         System.out.println(teacher);
         System.out.println(teacher.getSubject());
         for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i]);
+            System.out.println("\n" + students[i] + "\n" + "Overall GPA: " +students[i].getGPA() + "\n");
         }
     }
 }

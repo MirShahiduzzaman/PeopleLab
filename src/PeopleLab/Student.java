@@ -1,5 +1,11 @@
 package PeopleLab;
 
+/***
+ * Mir Shahiduzzaman
+ * Student object that extends off the Person object.
+ * Each student has an overall GPA, Math Score, and ELA Score.
+ */
+
 public class Student extends Person
 {
     private double GPA;

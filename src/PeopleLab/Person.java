@@ -1,5 +1,11 @@
 package PeopleLab;
 
+/***
+ * Abstract Person object.
+ * Assigns First / Last Name.
+ * Basis for the Student & Teacher Object.
+ */
+
 public abstract class Person
 {
     private String firstName;

@@ -1,5 +1,12 @@
 package PeopleLab;
 
+/***
+ * Afaq Anwar
+ * Teacher object that extends off the person object.
+ * Each teacher has a Title (Mr., Ms., Mrs., etc.)
+ * Each teacher also has a subject.
+ */
+
 public class Teacher extends Person {
     private String Subject;
     private String Title;
