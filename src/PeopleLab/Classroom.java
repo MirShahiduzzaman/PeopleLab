@@ -56,7 +56,7 @@ public class Classroom
         System.out.println(teacher);
         System.out.println(teacher.getSubject());
         for (int i = 0; i < students.length; i++) {
-            System.out.println("\n" + students[i] + "\n" + "Overall GPA: " +students[i].getGPA() + "\n");
+            System.out.println("\n" + students[i] + "\n" + "Overall GPA: " +students[i].getGPA() + "\n" + "Math Score: " + students[i].getMathScore() + "\n" + "ELA Score: " + students[i].getElaScore() + "\n");
         }
     }
 }

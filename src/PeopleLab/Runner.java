@@ -13,7 +13,7 @@ public class Runner {
 
 
     public static Student randomStudent() {
-        Student randomStudent = new Student(firstNames[(int)(Math.random() * firstNames.length) + 0], familyNames[(int)(Math.random() * firstNames.length) + 0], ((Math.random() * 4) + 1), ((int)(Math.random() * 100) + 65), ((int)(Math.random() * 100) + 65));
+        Student randomStudent = new Student(firstNames[(int)(Math.random() * firstNames.length) + 0], familyNames[(int)(Math.random() * firstNames.length) + 0], ((Math.random() * 4) + 1), ((int)(Math.random() * (100-66)) + 65), ((int)(Math.random() * (100-66)) + 65));
         return randomStudent;
     }
 
@@ -24,10 +24,10 @@ public class Runner {
             Student s1 = randomStudent();
             students[i] = s1;
         }
-        Classroom mathClass = new Classroom();
-        mathClass.setTeacher(teacher);
-        mathClass.setStudents(students);
-        mathClass.printClass();
-        System.out.println(teacher.getSubject() + " Class Average: " + mathClass.classAverage());
+        Classroom classroom = new Classroom();
+        classroom.setTeacher(teacher);
+        classroom.setStudents(students);
+        classroom.printClass();
+        System.out.println(classroom.getSubject() + " Class Average: " + classroom.classAverage());
     }
 }
