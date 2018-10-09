@@ -46,6 +46,7 @@ public class Student extends Person
         this.elaScore = elaScore;
     }
 
+    @Override
     public String toString()
     {
         return(getFamilyName() + ", " + getFirstName());
