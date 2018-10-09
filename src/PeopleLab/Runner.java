@@ -28,6 +28,6 @@ public class Runner {
         mathClass.setTeacher(teacher);
         mathClass.setStudents(students);
         mathClass.printClass();
-        System.out.println("Math Class Average: " + mathClass.classAverage());
+        System.out.println(teacher.getSubject() + " Class Average: " + mathClass.classAverage());
     }
 }
