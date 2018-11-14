@@ -13,7 +13,7 @@ public class Runner {
 
 
     public static Student randomStudent() {
-        Student randomStudent = new Student(firstNames[(int)(Math.random() * firstNames.length) + 0], familyNames[(int)(Math.random() * firstNames.length) + 0], ((Math.random() * 4) + 1), ((int)(Math.random() * (100-66)) + 65), ((int)(Math.random() * (100-66)) + 65));
+        Student randomStudent = new Student(firstNames[(int)(Math.random() * firstNames.length)], familyNames[(int)(Math.random() * firstNames.length)], ((Math.random() * 4) + 1), ((int)(Math.random() * (35)) + 65), ((int)(Math.random() * (35)) + 65));
         return randomStudent;
     }
 
